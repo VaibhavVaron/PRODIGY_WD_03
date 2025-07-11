@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="theme-btn">🌙 Dark Mode</button>
+        </div>
+        <h1>Tic-Tac-Toe</h1>
+        
+        <div class="game-mode">
+            <button id="pvp-btn">Player vs Player</button>
+            <button id="pvc-btn">Player vs Computer</button>
+        </div>
+        
+        <div class="difficulty-panel">
+            <h3>AI Difficulty:</h3>
+            <ul class="difficulty-levels">
+                <li><button id="easy-btn" class="difficulty-btn">Easy</button></li>
+                <li><button id="medium-btn" class="difficulty-btn active">Medium</button></li>
+                <li><button id="hard-btn" class="difficulty-btn">Hard</button></li>
+            </ul>
+        </div>
+        
+        <div class="game-info">
+            <p id="status">Select game mode to start</p>
+            <p id="current-player"></p>
+        </div>
+        
+        <div class="board" id="board">
+            <!-- Cells will be created by JavaScript -->
+        </div>
+        
+        <button id="reset-btn">Reset Game</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
